@@ -11,14 +11,290 @@
 		C7D84A372913B751009177D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A362913B751009177D7 /* ContentView.swift */; };
 		C7D84A392913B753009177D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A382913B753009177D7 /* Assets.xcassets */; };
 		C7D84A3C2913B753009177D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A3B2913B753009177D7 /* Preview Assets.xcassets */; };
+		C7D84A802913B92D009177D7 /* schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A442913B92C009177D7 /* schema.graphqls */; };
+		C7D84A812913B92D009177D7 /* CheckPersonIdMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A452913B92C009177D7 /* CheckPersonIdMutation.graphql.swift */; };
+		C7D84A822913B92D009177D7 /* GetUploadTokenMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A462913B92C009177D7 /* GetUploadTokenMutation.graphql.swift */; };
+		C7D84A832913B92D009177D7 /* User.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A472913B92C009177D7 /* User.graphql */; };
+		C7D84A842913B92D009177D7 /* .graphqlconfig in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A482913B92C009177D7 /* .graphqlconfig */; };
+		C7D84A852913B92D009177D7 /* GetPost.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A492913B92C009177D7 /* GetPost.graphql */; };
+		C7D84A862913B92D009177D7 /* UpdateMobileAppMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A4A2913B92C009177D7 /* UpdateMobileAppMutation.graphql.swift */; };
+		C7D84A872913B92D009177D7 /* SearchQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A4B2913B92C009177D7 /* SearchQuery.graphql.swift */; };
+		C7D84A882913B92D009177D7 /* UserPostQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A4C2913B92C009177D7 /* UserPostQuery.graphql.swift */; };
+		C7D84A892913B92D009177D7 /* AddPostMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A4D2913B92C009177D7 /* AddPostMutation.graphql.swift */; };
+		C7D84A8A2913B92D009177D7 /* CheckUsernameMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A4E2913B92C009177D7 /* CheckUsernameMutation.graphql.swift */; };
+		C7D84A8B2913B92D009177D7 /* PostsQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A4F2913B92C009177D7 /* PostsQuery.graphql.swift */; };
+		C7D84A8C2913B92D009177D7 /* FavoritePostMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A502913B92C009177D7 /* FavoritePostMutation.graphql.swift */; };
+		C7D84A8D2913B92D009177D7 /* DeleteReplyMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A512913B92C009177D7 /* DeleteReplyMutation.graphql.swift */; };
+		C7D84A8E2913B92D009177D7 /* UpdateQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A522913B92C009177D7 /* UpdateQuery.graphql.swift */; };
+		C7D84A8F2913B92D009177D7 /* SendPhoneCodeMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A532913B92C009177D7 /* SendPhoneCodeMutation.graphql.swift */; };
+		C7D84A902913B92D009177D7 /* Message.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A542913B92C009177D7 /* Message.graphql */; };
+		C7D84A912913B92D009177D7 /* AppQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A552913B92C009177D7 /* AppQuery.graphql.swift */; };
+		C7D84A922913B92D009177D7 /* FollowedQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A562913B92C009177D7 /* FollowedQuery.graphql.swift */; };
+		C7D84A932913B92D009177D7 /* FollowingPostQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A572913B92C009177D7 /* FollowingPostQuery.graphql.swift */; };
+		C7D84A942913B92D009177D7 /* CategoryQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A582913B92C009177D7 /* CategoryQuery.graphql.swift */; };
+		C7D84A952913B92D009177D7 /* MessagesQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A592913B92C009177D7 /* MessagesQuery.graphql.swift */; };
+		C7D84A962913B92D009177D7 /* ReadPostMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A5A2913B92C009177D7 /* ReadPostMutation.graphql.swift */; };
+		C7D84A972913B92D009177D7 /* LoginMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A5B2913B92C009177D7 /* LoginMutation.graphql.swift */; };
+		C7D84A982913B92D009177D7 /* GetAppUploadTokenMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A5C2913B92C009177D7 /* GetAppUploadTokenMutation.graphql.swift */; };
+		C7D84A992913B92D009177D7 /* PostQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A5D2913B92C009177D7 /* PostQuery.graphql.swift */; };
+		C7D84A9A2913B92D009177D7 /* FollowingQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A5E2913B92C009177D7 /* FollowingQuery.graphql.swift */; };
+		C7D84A9B2913B92D009177D7 /* CurrentUserQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A5F2913B92C009177D7 /* CurrentUserQuery.graphql.swift */; };
+		C7D84A9C2913B92D009177D7 /* UserDataQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A602913B92C009177D7 /* UserDataQuery.graphql.swift */; };
+		C7D84A9D2913B92D009177D7 /* ReplyQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A612913B92C009177D7 /* ReplyQuery.graphql.swift */; };
+		C7D84A9E2913B92D009177D7 /* AddReportMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A622913B92C009177D7 /* AddReportMutation.graphql.swift */; };
+		C7D84A9F2913B92D009177D7 /* Image.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A632913B92C009177D7 /* Image.graphql */; };
+		C7D84AA02913B92D009177D7 /* ReadMessageMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A642913B92C009177D7 /* ReadMessageMutation.graphql.swift */; };
+		C7D84AA12913B92D009177D7 /* UserRepliesPostQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A652913B92C009177D7 /* UserRepliesPostQuery.graphql.swift */; };
+		C7D84AA22913B92D009177D7 /* DeletePostMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A662913B92C009177D7 /* DeletePostMutation.graphql.swift */; };
+		C7D84AA32913B92D009177D7 /* UpdateUserMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A672913B92C009177D7 /* UpdateUserMutation.graphql.swift */; };
+		C7D84AA42913B92D009177D7 /* UserMarkedPostQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A682913B92C009177D7 /* UserMarkedPostQuery.graphql.swift */; };
+		C7D84AA52913B92D009177D7 /* FollowUserMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A692913B92C009177D7 /* FollowUserMutation.graphql.swift */; };
+		C7D84AA62913B92D009177D7 /* CategoryPostQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A6A2913B92C009177D7 /* CategoryPostQuery.graphql.swift */; };
+		C7D84AA72913B92D009177D7 /* UnreadMessageCountQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A6B2913B92C009177D7 /* UnreadMessageCountQuery.graphql.swift */; };
+		C7D84AA82913B92D009177D7 /* UpdatePostMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A6C2913B92C009177D7 /* UpdatePostMutation.graphql.swift */; };
+		C7D84AA92913B92D009177D7 /* Search.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A6D2913B92C009177D7 /* Search.graphql */; };
+		C7D84AAA2913B92D009177D7 /* Post.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A6E2913B92C009177D7 /* Post.graphql */; };
+		C7D84AAB2913B92D009177D7 /* Update.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A6F2913B92C009177D7 /* Update.graphql */; };
+		C7D84AAC2913B92D009177D7 /* AddPost.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A702913B92C009177D7 /* AddPost.graphql */; };
+		C7D84AAD2913B92D009177D7 /* AddReplyMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A712913B92C009177D7 /* AddReplyMutation.graphql.swift */; };
+		C7D84AAE2913B92D009177D7 /* ReadMessagesMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A722913B92C009177D7 /* ReadMessagesMutation.graphql.swift */; };
+		C7D84AAF2913B92D009177D7 /* AddCommentMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A732913B92C009177D7 /* AddCommentMutation.graphql.swift */; };
+		C7D84AB02913B92D009177D7 /* UserLikedPostQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A742913B92C009177D7 /* UserLikedPostQuery.graphql.swift */; };
+		C7D84AB12913B92D009177D7 /* SetPhoneMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A752913B92C009177D7 /* SetPhoneMutation.graphql.swift */; };
+		C7D84AB22913B92D009177D7 /* Category.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A762913B92C009177D7 /* Category.graphql */; };
+		C7D84AB32913B92D009177D7 /* LikePostMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A772913B92C009177D7 /* LikePostMutation.graphql.swift */; };
+		C7D84AB42913B92D009177D7 /* AddMobileAppMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A782913B92C009177D7 /* AddMobileAppMutation.graphql.swift */; };
+		C7D84AB52913B92D009177D7 /* UpdateReplyMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A792913B92C009177D7 /* UpdateReplyMutation.graphql.swift */; };
+		C7D84AB62913B92D009177D7 /* GetUserData.graphql in Resources */ = {isa = PBXBuildFile; fileRef = C7D84A7A2913B92C009177D7 /* GetUserData.graphql */; };
+		C7D84AB72913B92D009177D7 /* HotPostsQuery.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A7B2913B92C009177D7 /* HotPostsQuery.graphql.swift */; };
+		C7D84AB82913B92D009177D7 /* SendEmailCodeMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A7C2913B92C009177D7 /* SendEmailCodeMutation.graphql.swift */; };
+		C7D84AB92913B92D009177D7 /* CheckPhoneMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A7D2913B92C009177D7 /* CheckPhoneMutation.graphql.swift */; };
+		C7D84ABA2913B92D009177D7 /* ChangePasswordMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A7E2913B92C009177D7 /* ChangePasswordMutation.graphql.swift */; };
+		C7D84ABB2913B92D009177D7 /* RegisterMutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84A7F2913B92C009177D7 /* RegisterMutation.graphql.swift */; };
+		C7D84BFE2913B99B009177D7 /* SearchResult.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BAE2913B99A009177D7 /* SearchResult.graphql.swift */; };
+		C7D84BFF2913B99B009177D7 /* MessageRefer.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BAF2913B99A009177D7 /* MessageRefer.graphql.swift */; };
+		C7D84C002913B99B009177D7 /* DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BB12913B99A009177D7 /* DateTime.swift */; };
+		C7D84C012913B99B009177D7 /* ReportType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BB32913B99A009177D7 /* ReportType.graphql.swift */; };
+		C7D84C022913B99B009177D7 /* SearchType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BB42913B99A009177D7 /* SearchType.graphql.swift */; };
+		C7D84C032913B99B009177D7 /* MessageType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BB52913B99A009177D7 /* MessageType.graphql.swift */; };
+		C7D84C042913B99B009177D7 /* UploadType.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BB62913B99A009177D7 /* UploadType.graphql.swift */; };
+		C7D84C052913B99B009177D7 /* Account.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BB82913B99A009177D7 /* Account.graphql.swift */; };
+		C7D84C062913B99B009177D7 /* UpdateReplyPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BB92913B99A009177D7 /* UpdateReplyPayload.graphql.swift */; };
+		C7D84C072913B99B009177D7 /* RegisterPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BBA2913B99A009177D7 /* RegisterPayload.graphql.swift */; };
+		C7D84C082913B99B009177D7 /* SetPhonePayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BBB2913B99A009177D7 /* SetPhonePayload.graphql.swift */; };
+		C7D84C092913B99B009177D7 /* ReadPostPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BBC2913B99A009177D7 /* ReadPostPayload.graphql.swift */; };
+		C7D84C0A2913B99B009177D7 /* Message.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BBD2913B99A009177D7 /* Message.graphql.swift */; };
+		C7D84C0B2913B99B009177D7 /* Post.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BBE2913B99A009177D7 /* Post.graphql.swift */; };
+		C7D84C0C2913B99B009177D7 /* UpdateUserPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BBF2913B99A009177D7 /* UpdateUserPayload.graphql.swift */; };
+		C7D84C0D2913B99B009177D7 /* FollowUserPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC02913B99A009177D7 /* FollowUserPayload.graphql.swift */; };
+		C7D84C0E2913B99B009177D7 /* CheckUsernamePayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC12913B99A009177D7 /* CheckUsernamePayload.graphql.swift */; };
+		C7D84C0F2913B99B009177D7 /* DeleteReplyPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC22913B99A009177D7 /* DeleteReplyPayload.graphql.swift */; };
+		C7D84C102913B99B009177D7 /* FavoritePostPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC32913B99A009177D7 /* FavoritePostPayload.graphql.swift */; };
+		C7D84C112913B99B009177D7 /* GetMobileAppUploadTokenPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC42913B99A009177D7 /* GetMobileAppUploadTokenPayload.graphql.swift */; };
+		C7D84C122913B99B009177D7 /* UpdateMobileAppInfoPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC52913B99A009177D7 /* UpdateMobileAppInfoPayload.graphql.swift */; };
+		C7D84C132913B99B009177D7 /* UpdatePostPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC62913B99A009177D7 /* UpdatePostPayload.graphql.swift */; };
+		C7D84C142913B99B009177D7 /* User.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC72913B99A009177D7 /* User.graphql.swift */; };
+		C7D84C152913B99B009177D7 /* CheckPersonIDPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC82913B99A009177D7 /* CheckPersonIDPayload.graphql.swift */; };
+		C7D84C162913B99B009177D7 /* DeletePostPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BC92913B99A009177D7 /* DeletePostPayload.graphql.swift */; };
+		C7D84C172913B99B009177D7 /* ReplyConnection.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BCA2913B99A009177D7 /* ReplyConnection.graphql.swift */; };
+		C7D84C182913B99B009177D7 /* Reply.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BCB2913B99A009177D7 /* Reply.graphql.swift */; };
+		C7D84C192913B99B009177D7 /* ReadMessagePayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BCC2913B99A009177D7 /* ReadMessagePayload.graphql.swift */; };
+		C7D84C1A2913B99B009177D7 /* AddPostPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BCD2913B99A009177D7 /* AddPostPayload.graphql.swift */; };
+		C7D84C1B2913B99B009177D7 /* Mutation.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BCE2913B99A009177D7 /* Mutation.graphql.swift */; };
+		C7D84C1C2913B99B009177D7 /* PageInfo.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BCF2913B99A009177D7 /* PageInfo.graphql.swift */; };
+		C7D84C1D2913B99B009177D7 /* CheckPhonePayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD02913B99A009177D7 /* CheckPhonePayload.graphql.swift */; };
+		C7D84C1E2913B99B009177D7 /* GetUploadTokenPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD12913B99A009177D7 /* GetUploadTokenPayload.graphql.swift */; };
+		C7D84C1F2913B99B009177D7 /* Category.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD22913B99A009177D7 /* Category.graphql.swift */; };
+		C7D84C202913B99B009177D7 /* LoginPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD32913B99A009177D7 /* LoginPayload.graphql.swift */; };
+		C7D84C212913B99B009177D7 /* Query.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD42913B99A009177D7 /* Query.graphql.swift */; };
+		C7D84C222913B99B009177D7 /* ChangePasswordPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD52913B99A009177D7 /* ChangePasswordPayload.graphql.swift */; };
+		C7D84C232913B99B009177D7 /* AddReplyPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD62913B99A009177D7 /* AddReplyPayload.graphql.swift */; };
+		C7D84C242913B99B009177D7 /* UserCount.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD72913B99A009177D7 /* UserCount.graphql.swift */; };
+		C7D84C252913B99B009177D7 /* ReadMessagesPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD82913B99A009177D7 /* ReadMessagesPayload.graphql.swift */; };
+		C7D84C262913B99B009177D7 /* LikePostPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BD92913B99A009177D7 /* LikePostPayload.graphql.swift */; };
+		C7D84C272913B99B009177D7 /* AddReportPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BDA2913B99A009177D7 /* AddReportPayload.graphql.swift */; };
+		C7D84C282913B99B009177D7 /* SendCodePayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BDB2913B99A009177D7 /* SendCodePayload.graphql.swift */; };
+		C7D84C292913B99B009177D7 /* AddMobileAppInfoPayload.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BDC2913B99A009177D7 /* AddMobileAppInfoPayload.graphql.swift */; };
+		C7D84C2A2913B99B009177D7 /* MessageCount.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BDD2913B99A009177D7 /* MessageCount.graphql.swift */; };
+		C7D84C2B2913B99B009177D7 /* MobileAppInfo.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BDE2913B99A009177D7 /* MobileAppInfo.graphql.swift */; };
+		C7D84C2C2913B99B009177D7 /* PostConnection.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BDF2913B99A009177D7 /* PostConnection.graphql.swift */; };
+		C7D84C2D2913B99B009177D7 /* SchemaConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE02913B99A009177D7 /* SchemaConfiguration.swift */; };
+		C7D84C2E2913B99B009177D7 /* FollowUserInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE22913B99A009177D7 /* FollowUserInput.graphql.swift */; };
+		C7D84C2F2913B99B009177D7 /* ReadPostInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE32913B99A009177D7 /* ReadPostInput.graphql.swift */; };
+		C7D84C302913B99B009177D7 /* LoginInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE42913B99A009177D7 /* LoginInput.graphql.swift */; };
+		C7D84C312913B99B009177D7 /* GetUploadTokenInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE52913B99A009177D7 /* GetUploadTokenInput.graphql.swift */; };
+		C7D84C322913B99B009177D7 /* CheckPersonIDInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE62913B99A009177D7 /* CheckPersonIDInput.graphql.swift */; };
+		C7D84C332913B99B009177D7 /* AddReportInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE72913B99A009177D7 /* AddReportInput.graphql.swift */; };
+		C7D84C342913B99B009177D7 /* RegisterInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE82913B99A009177D7 /* RegisterInput.graphql.swift */; };
+		C7D84C352913B99B009177D7 /* AddMobileAppInfoInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BE92913B99A009177D7 /* AddMobileAppInfoInput.graphql.swift */; };
+		C7D84C362913B99B009177D7 /* AddReplyInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BEA2913B99A009177D7 /* AddReplyInput.graphql.swift */; };
+		C7D84C372913B99B009177D7 /* CheckUsernameInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BEB2913B99A009177D7 /* CheckUsernameInput.graphql.swift */; };
+		C7D84C382913B99B009177D7 /* ReadMessagesInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BEC2913B99A009177D7 /* ReadMessagesInput.graphql.swift */; };
+		C7D84C392913B99B009177D7 /* DeleteReplyInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BED2913B99A009177D7 /* DeleteReplyInput.graphql.swift */; };
+		C7D84C3A2913B99B009177D7 /* SendPhoneCodeInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BEE2913B99A009177D7 /* SendPhoneCodeInput.graphql.swift */; };
+		C7D84C3B2913B99B009177D7 /* LikePostInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BEF2913B99A009177D7 /* LikePostInput.graphql.swift */; };
+		C7D84C3C2913B99B009177D7 /* SendEmailCodeInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF02913B99A009177D7 /* SendEmailCodeInput.graphql.swift */; };
+		C7D84C3D2913B99B009177D7 /* ReadMessageInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF12913B99A009177D7 /* ReadMessageInput.graphql.swift */; };
+		C7D84C3E2913B99B009177D7 /* ChangePasswordInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF22913B99A009177D7 /* ChangePasswordInput.graphql.swift */; };
+		C7D84C3F2913B99B009177D7 /* UpdateMobileAppInfoInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF32913B99A009177D7 /* UpdateMobileAppInfoInput.graphql.swift */; };
+		C7D84C402913B99B009177D7 /* AddPostInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF42913B99A009177D7 /* AddPostInput.graphql.swift */; };
+		C7D84C412913B99B009177D7 /* DeletePostInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF52913B99A009177D7 /* DeletePostInput.graphql.swift */; };
+		C7D84C422913B99B009177D7 /* CheckPhoneInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF62913B99A009177D7 /* CheckPhoneInput.graphql.swift */; };
+		C7D84C432913B99B009177D7 /* GetMobileAppUploadTokenInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF72913B99A009177D7 /* GetMobileAppUploadTokenInput.graphql.swift */; };
+		C7D84C442913B99B009177D7 /* UpdatePostInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF82913B99A009177D7 /* UpdatePostInput.graphql.swift */; };
+		C7D84C452913B99B009177D7 /* FavoritePostInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BF92913B99A009177D7 /* FavoritePostInput.graphql.swift */; };
+		C7D84C462913B99B009177D7 /* UpdateUserInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BFA2913B99A009177D7 /* UpdateUserInput.graphql.swift */; };
+		C7D84C472913B99B009177D7 /* UpdateReplyInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BFB2913B99A009177D7 /* UpdateReplyInput.graphql.swift */; };
+		C7D84C482913B99B009177D7 /* SetPhoneInput.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BFC2913B99A009177D7 /* SetPhoneInput.graphql.swift */; };
+		C7D84C492913B99B009177D7 /* SchemaMetadata.graphql.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D84BFD2913B99A009177D7 /* SchemaMetadata.graphql.swift */; };
+		EB53428BDAC24DE95CE1C9EC /* Pods_MyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A17542546D8F7060E7FCC0B /* Pods_MyTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CF5FB323A29BA079D044AED /* Pods-MyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTest.debug.xcconfig"; path = "Target Support Files/Pods-MyTest/Pods-MyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		7A17542546D8F7060E7FCC0B /* Pods_MyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D84A312913B751009177D7 /* MyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D84A342913B751009177D7 /* MyTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestApp.swift; sourceTree = "<group>"; };
 		C7D84A362913B751009177D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C7D84A382913B753009177D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7D84A3B2913B753009177D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C7D84A442913B92C009177D7 /* schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = schema.graphqls; sourceTree = "<group>"; };
+		C7D84A452913B92C009177D7 /* CheckPersonIdMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPersonIdMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A462913B92C009177D7 /* GetUploadTokenMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUploadTokenMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A472913B92C009177D7 /* User.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = User.graphql; sourceTree = "<group>"; };
+		C7D84A482913B92C009177D7 /* .graphqlconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .graphqlconfig; sourceTree = "<group>"; };
+		C7D84A492913B92C009177D7 /* GetPost.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetPost.graphql; sourceTree = "<group>"; };
+		C7D84A4A2913B92C009177D7 /* UpdateMobileAppMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateMobileAppMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A4B2913B92C009177D7 /* SearchQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A4C2913B92C009177D7 /* UserPostQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPostQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A4D2913B92C009177D7 /* AddPostMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A4E2913B92C009177D7 /* CheckUsernameMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckUsernameMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A4F2913B92C009177D7 /* PostsQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A502913B92C009177D7 /* FavoritePostMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePostMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A512913B92C009177D7 /* DeleteReplyMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteReplyMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A522913B92C009177D7 /* UpdateQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A532913B92C009177D7 /* SendPhoneCodeMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPhoneCodeMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A542913B92C009177D7 /* Message.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Message.graphql; sourceTree = "<group>"; };
+		C7D84A552913B92C009177D7 /* AppQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A562913B92C009177D7 /* FollowedQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowedQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A572913B92C009177D7 /* FollowingPostQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingPostQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A582913B92C009177D7 /* CategoryQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A592913B92C009177D7 /* MessagesQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A5A2913B92C009177D7 /* ReadPostMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadPostMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A5B2913B92C009177D7 /* LoginMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A5C2913B92C009177D7 /* GetAppUploadTokenMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAppUploadTokenMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A5D2913B92C009177D7 /* PostQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A5E2913B92C009177D7 /* FollowingQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowingQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A5F2913B92C009177D7 /* CurrentUserQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentUserQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A602913B92C009177D7 /* UserDataQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A612913B92C009177D7 /* ReplyQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A622913B92C009177D7 /* AddReportMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A632913B92C009177D7 /* Image.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Image.graphql; sourceTree = "<group>"; };
+		C7D84A642913B92C009177D7 /* ReadMessageMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMessageMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A652913B92C009177D7 /* UserRepliesPostQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepliesPostQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A662913B92C009177D7 /* DeletePostMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletePostMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A672913B92C009177D7 /* UpdateUserMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A682913B92C009177D7 /* UserMarkedPostQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMarkedPostQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A692913B92C009177D7 /* FollowUserMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowUserMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A6A2913B92C009177D7 /* CategoryPostQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPostQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A6B2913B92C009177D7 /* UnreadMessageCountQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnreadMessageCountQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A6C2913B92C009177D7 /* UpdatePostMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatePostMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A6D2913B92C009177D7 /* Search.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Search.graphql; sourceTree = "<group>"; };
+		C7D84A6E2913B92C009177D7 /* Post.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Post.graphql; sourceTree = "<group>"; };
+		C7D84A6F2913B92C009177D7 /* Update.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Update.graphql; sourceTree = "<group>"; };
+		C7D84A702913B92C009177D7 /* AddPost.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AddPost.graphql; sourceTree = "<group>"; };
+		C7D84A712913B92C009177D7 /* AddReplyMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReplyMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A722913B92C009177D7 /* ReadMessagesMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMessagesMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A732913B92C009177D7 /* AddCommentMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddCommentMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A742913B92C009177D7 /* UserLikedPostQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLikedPostQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A752913B92C009177D7 /* SetPhoneMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPhoneMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A762913B92C009177D7 /* Category.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Category.graphql; sourceTree = "<group>"; };
+		C7D84A772913B92C009177D7 /* LikePostMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikePostMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A782913B92C009177D7 /* AddMobileAppMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMobileAppMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A792913B92C009177D7 /* UpdateReplyMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateReplyMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A7A2913B92C009177D7 /* GetUserData.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GetUserData.graphql; sourceTree = "<group>"; };
+		C7D84A7B2913B92C009177D7 /* HotPostsQuery.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotPostsQuery.graphql.swift; sourceTree = "<group>"; };
+		C7D84A7C2913B92C009177D7 /* SendEmailCodeMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEmailCodeMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A7D2913B92C009177D7 /* CheckPhoneMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPhoneMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A7E2913B92C009177D7 /* ChangePasswordMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84A7F2913B92C009177D7 /* RegisterMutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterMutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84BAE2913B99A009177D7 /* SearchResult.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.graphql.swift; sourceTree = "<group>"; };
+		C7D84BAF2913B99A009177D7 /* MessageRefer.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageRefer.graphql.swift; sourceTree = "<group>"; };
+		C7D84BB12913B99A009177D7 /* DateTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTime.swift; sourceTree = "<group>"; };
+		C7D84BB32913B99A009177D7 /* ReportType.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportType.graphql.swift; sourceTree = "<group>"; };
+		C7D84BB42913B99A009177D7 /* SearchType.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchType.graphql.swift; sourceTree = "<group>"; };
+		C7D84BB52913B99A009177D7 /* MessageType.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageType.graphql.swift; sourceTree = "<group>"; };
+		C7D84BB62913B99A009177D7 /* UploadType.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadType.graphql.swift; sourceTree = "<group>"; };
+		C7D84BB82913B99A009177D7 /* Account.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.graphql.swift; sourceTree = "<group>"; };
+		C7D84BB92913B99A009177D7 /* UpdateReplyPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateReplyPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BBA2913B99A009177D7 /* RegisterPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BBB2913B99A009177D7 /* SetPhonePayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPhonePayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BBC2913B99A009177D7 /* ReadPostPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadPostPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BBD2913B99A009177D7 /* Message.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.graphql.swift; sourceTree = "<group>"; };
+		C7D84BBE2913B99A009177D7 /* Post.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.graphql.swift; sourceTree = "<group>"; };
+		C7D84BBF2913B99A009177D7 /* UpdateUserPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC02913B99A009177D7 /* FollowUserPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowUserPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC12913B99A009177D7 /* CheckUsernamePayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckUsernamePayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC22913B99A009177D7 /* DeleteReplyPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteReplyPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC32913B99A009177D7 /* FavoritePostPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePostPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC42913B99A009177D7 /* GetMobileAppUploadTokenPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMobileAppUploadTokenPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC52913B99A009177D7 /* UpdateMobileAppInfoPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateMobileAppInfoPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC62913B99A009177D7 /* UpdatePostPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatePostPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC72913B99A009177D7 /* User.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC82913B99A009177D7 /* CheckPersonIDPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPersonIDPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BC92913B99A009177D7 /* DeletePostPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletePostPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BCA2913B99A009177D7 /* ReplyConnection.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplyConnection.graphql.swift; sourceTree = "<group>"; };
+		C7D84BCB2913B99A009177D7 /* Reply.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reply.graphql.swift; sourceTree = "<group>"; };
+		C7D84BCC2913B99A009177D7 /* ReadMessagePayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMessagePayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BCD2913B99A009177D7 /* AddPostPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BCE2913B99A009177D7 /* Mutation.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutation.graphql.swift; sourceTree = "<group>"; };
+		C7D84BCF2913B99A009177D7 /* PageInfo.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageInfo.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD02913B99A009177D7 /* CheckPhonePayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPhonePayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD12913B99A009177D7 /* GetUploadTokenPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUploadTokenPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD22913B99A009177D7 /* Category.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD32913B99A009177D7 /* LoginPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD42913B99A009177D7 /* Query.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Query.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD52913B99A009177D7 /* ChangePasswordPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD62913B99A009177D7 /* AddReplyPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReplyPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD72913B99A009177D7 /* UserCount.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCount.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD82913B99A009177D7 /* ReadMessagesPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMessagesPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BD92913B99A009177D7 /* LikePostPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikePostPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BDA2913B99A009177D7 /* AddReportPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BDB2913B99A009177D7 /* SendCodePayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendCodePayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BDC2913B99A009177D7 /* AddMobileAppInfoPayload.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMobileAppInfoPayload.graphql.swift; sourceTree = "<group>"; };
+		C7D84BDD2913B99A009177D7 /* MessageCount.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCount.graphql.swift; sourceTree = "<group>"; };
+		C7D84BDE2913B99A009177D7 /* MobileAppInfo.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileAppInfo.graphql.swift; sourceTree = "<group>"; };
+		C7D84BDF2913B99A009177D7 /* PostConnection.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostConnection.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE02913B99A009177D7 /* SchemaConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaConfiguration.swift; sourceTree = "<group>"; };
+		C7D84BE22913B99A009177D7 /* FollowUserInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowUserInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE32913B99A009177D7 /* ReadPostInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadPostInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE42913B99A009177D7 /* LoginInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE52913B99A009177D7 /* GetUploadTokenInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUploadTokenInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE62913B99A009177D7 /* CheckPersonIDInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPersonIDInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE72913B99A009177D7 /* AddReportInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE82913B99A009177D7 /* RegisterInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BE92913B99A009177D7 /* AddMobileAppInfoInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMobileAppInfoInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BEA2913B99A009177D7 /* AddReplyInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReplyInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BEB2913B99A009177D7 /* CheckUsernameInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckUsernameInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BEC2913B99A009177D7 /* ReadMessagesInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMessagesInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BED2913B99A009177D7 /* DeleteReplyInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteReplyInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BEE2913B99A009177D7 /* SendPhoneCodeInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPhoneCodeInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BEF2913B99A009177D7 /* LikePostInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikePostInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF02913B99A009177D7 /* SendEmailCodeInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEmailCodeInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF12913B99A009177D7 /* ReadMessageInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadMessageInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF22913B99A009177D7 /* ChangePasswordInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangePasswordInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF32913B99A009177D7 /* UpdateMobileAppInfoInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateMobileAppInfoInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF42913B99A009177D7 /* AddPostInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF52913B99A009177D7 /* DeletePostInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletePostInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF62913B99A009177D7 /* CheckPhoneInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckPhoneInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF72913B99A009177D7 /* GetMobileAppUploadTokenInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMobileAppUploadTokenInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF82913B99A009177D7 /* UpdatePostInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatePostInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BF92913B99A009177D7 /* FavoritePostInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritePostInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BFA2913B99A009177D7 /* UpdateUserInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateUserInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BFB2913B99A009177D7 /* UpdateReplyInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdateReplyInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BFC2913B99A009177D7 /* SetPhoneInput.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPhoneInput.graphql.swift; sourceTree = "<group>"; };
+		C7D84BFD2913B99A009177D7 /* SchemaMetadata.graphql.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaMetadata.graphql.swift; sourceTree = "<group>"; };
+		C8A04DC80F1CF553D6BD4791 /* Pods-MyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTest.release.xcconfig"; path = "Target Support Files/Pods-MyTest/Pods-MyTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +302,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB53428BDAC24DE95CE1C9EC /* Pods_MyTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7087D7ACDDD641770795D8FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6CF5FB323A29BA079D044AED /* Pods-MyTest.debug.xcconfig */,
+				C8A04DC80F1CF553D6BD4791 /* Pods-MyTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B2F80B5CC2D8E58A6559938A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A17542546D8F7060E7FCC0B /* Pods_MyTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7D84A282913B751009177D7 = {
 			isa = PBXGroup;
 			children = (
+				C7D84BAC2913B99A009177D7 /* MySchema */,
 				C7D84A332913B751009177D7 /* MyTest */,
 				C7D84A322913B751009177D7 /* Products */,
+				7087D7ACDDD641770795D8FE /* Pods */,
+				B2F80B5CC2D8E58A6559938A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +348,7 @@
 		C7D84A332913B751009177D7 /* MyTest */ = {
 			isa = PBXGroup;
 			children = (
+				C7D84A432913B92C009177D7 /* graphql */,
 				C7D84A342913B751009177D7 /* MyTestApp.swift */,
 				C7D84A362913B751009177D7 /* ContentView.swift */,
 				C7D84A382913B753009177D7 /* Assets.xcassets */,
@@ -67,6 +365,196 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		C7D84A432913B92C009177D7 /* graphql */ = {
+			isa = PBXGroup;
+			children = (
+				C7D84A442913B92C009177D7 /* schema.graphqls */,
+				C7D84A452913B92C009177D7 /* CheckPersonIdMutation.graphql.swift */,
+				C7D84A462913B92C009177D7 /* GetUploadTokenMutation.graphql.swift */,
+				C7D84A472913B92C009177D7 /* User.graphql */,
+				C7D84A482913B92C009177D7 /* .graphqlconfig */,
+				C7D84A492913B92C009177D7 /* GetPost.graphql */,
+				C7D84A4A2913B92C009177D7 /* UpdateMobileAppMutation.graphql.swift */,
+				C7D84A4B2913B92C009177D7 /* SearchQuery.graphql.swift */,
+				C7D84A4C2913B92C009177D7 /* UserPostQuery.graphql.swift */,
+				C7D84A4D2913B92C009177D7 /* AddPostMutation.graphql.swift */,
+				C7D84A4E2913B92C009177D7 /* CheckUsernameMutation.graphql.swift */,
+				C7D84A4F2913B92C009177D7 /* PostsQuery.graphql.swift */,
+				C7D84A502913B92C009177D7 /* FavoritePostMutation.graphql.swift */,
+				C7D84A512913B92C009177D7 /* DeleteReplyMutation.graphql.swift */,
+				C7D84A522913B92C009177D7 /* UpdateQuery.graphql.swift */,
+				C7D84A532913B92C009177D7 /* SendPhoneCodeMutation.graphql.swift */,
+				C7D84A542913B92C009177D7 /* Message.graphql */,
+				C7D84A552913B92C009177D7 /* AppQuery.graphql.swift */,
+				C7D84A562913B92C009177D7 /* FollowedQuery.graphql.swift */,
+				C7D84A572913B92C009177D7 /* FollowingPostQuery.graphql.swift */,
+				C7D84A582913B92C009177D7 /* CategoryQuery.graphql.swift */,
+				C7D84A592913B92C009177D7 /* MessagesQuery.graphql.swift */,
+				C7D84A5A2913B92C009177D7 /* ReadPostMutation.graphql.swift */,
+				C7D84A5B2913B92C009177D7 /* LoginMutation.graphql.swift */,
+				C7D84A5C2913B92C009177D7 /* GetAppUploadTokenMutation.graphql.swift */,
+				C7D84A5D2913B92C009177D7 /* PostQuery.graphql.swift */,
+				C7D84A5E2913B92C009177D7 /* FollowingQuery.graphql.swift */,
+				C7D84A5F2913B92C009177D7 /* CurrentUserQuery.graphql.swift */,
+				C7D84A602913B92C009177D7 /* UserDataQuery.graphql.swift */,
+				C7D84A612913B92C009177D7 /* ReplyQuery.graphql.swift */,
+				C7D84A622913B92C009177D7 /* AddReportMutation.graphql.swift */,
+				C7D84A632913B92C009177D7 /* Image.graphql */,
+				C7D84A642913B92C009177D7 /* ReadMessageMutation.graphql.swift */,
+				C7D84A652913B92C009177D7 /* UserRepliesPostQuery.graphql.swift */,
+				C7D84A662913B92C009177D7 /* DeletePostMutation.graphql.swift */,
+				C7D84A672913B92C009177D7 /* UpdateUserMutation.graphql.swift */,
+				C7D84A682913B92C009177D7 /* UserMarkedPostQuery.graphql.swift */,
+				C7D84A692913B92C009177D7 /* FollowUserMutation.graphql.swift */,
+				C7D84A6A2913B92C009177D7 /* CategoryPostQuery.graphql.swift */,
+				C7D84A6B2913B92C009177D7 /* UnreadMessageCountQuery.graphql.swift */,
+				C7D84A6C2913B92C009177D7 /* UpdatePostMutation.graphql.swift */,
+				C7D84A6D2913B92C009177D7 /* Search.graphql */,
+				C7D84A6E2913B92C009177D7 /* Post.graphql */,
+				C7D84A6F2913B92C009177D7 /* Update.graphql */,
+				C7D84A702913B92C009177D7 /* AddPost.graphql */,
+				C7D84A712913B92C009177D7 /* AddReplyMutation.graphql.swift */,
+				C7D84A722913B92C009177D7 /* ReadMessagesMutation.graphql.swift */,
+				C7D84A732913B92C009177D7 /* AddCommentMutation.graphql.swift */,
+				C7D84A742913B92C009177D7 /* UserLikedPostQuery.graphql.swift */,
+				C7D84A752913B92C009177D7 /* SetPhoneMutation.graphql.swift */,
+				C7D84A762913B92C009177D7 /* Category.graphql */,
+				C7D84A772913B92C009177D7 /* LikePostMutation.graphql.swift */,
+				C7D84A782913B92C009177D7 /* AddMobileAppMutation.graphql.swift */,
+				C7D84A792913B92C009177D7 /* UpdateReplyMutation.graphql.swift */,
+				C7D84A7A2913B92C009177D7 /* GetUserData.graphql */,
+				C7D84A7B2913B92C009177D7 /* HotPostsQuery.graphql.swift */,
+				C7D84A7C2913B92C009177D7 /* SendEmailCodeMutation.graphql.swift */,
+				C7D84A7D2913B92C009177D7 /* CheckPhoneMutation.graphql.swift */,
+				C7D84A7E2913B92C009177D7 /* ChangePasswordMutation.graphql.swift */,
+				C7D84A7F2913B92C009177D7 /* RegisterMutation.graphql.swift */,
+			);
+			path = graphql;
+			sourceTree = "<group>";
+		};
+		C7D84BAC2913B99A009177D7 /* MySchema */ = {
+			isa = PBXGroup;
+			children = (
+				C7D84BAD2913B99A009177D7 /* Unions */,
+				C7D84BB02913B99A009177D7 /* CustomScalars */,
+				C7D84BB22913B99A009177D7 /* Enums */,
+				C7D84BB72913B99A009177D7 /* Objects */,
+				C7D84BE02913B99A009177D7 /* SchemaConfiguration.swift */,
+				C7D84BE12913B99A009177D7 /* InputObjects */,
+				C7D84BFD2913B99A009177D7 /* SchemaMetadata.graphql.swift */,
+			);
+			path = MySchema;
+			sourceTree = "<group>";
+		};
+		C7D84BAD2913B99A009177D7 /* Unions */ = {
+			isa = PBXGroup;
+			children = (
+				C7D84BAE2913B99A009177D7 /* SearchResult.graphql.swift */,
+				C7D84BAF2913B99A009177D7 /* MessageRefer.graphql.swift */,
+			);
+			path = Unions;
+			sourceTree = "<group>";
+		};
+		C7D84BB02913B99A009177D7 /* CustomScalars */ = {
+			isa = PBXGroup;
+			children = (
+				C7D84BB12913B99A009177D7 /* DateTime.swift */,
+			);
+			path = CustomScalars;
+			sourceTree = "<group>";
+		};
+		C7D84BB22913B99A009177D7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				C7D84BB32913B99A009177D7 /* ReportType.graphql.swift */,
+				C7D84BB42913B99A009177D7 /* SearchType.graphql.swift */,
+				C7D84BB52913B99A009177D7 /* MessageType.graphql.swift */,
+				C7D84BB62913B99A009177D7 /* UploadType.graphql.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		C7D84BB72913B99A009177D7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				C7D84BB82913B99A009177D7 /* Account.graphql.swift */,
+				C7D84BB92913B99A009177D7 /* UpdateReplyPayload.graphql.swift */,
+				C7D84BBA2913B99A009177D7 /* RegisterPayload.graphql.swift */,
+				C7D84BBB2913B99A009177D7 /* SetPhonePayload.graphql.swift */,
+				C7D84BBC2913B99A009177D7 /* ReadPostPayload.graphql.swift */,
+				C7D84BBD2913B99A009177D7 /* Message.graphql.swift */,
+				C7D84BBE2913B99A009177D7 /* Post.graphql.swift */,
+				C7D84BBF2913B99A009177D7 /* UpdateUserPayload.graphql.swift */,
+				C7D84BC02913B99A009177D7 /* FollowUserPayload.graphql.swift */,
+				C7D84BC12913B99A009177D7 /* CheckUsernamePayload.graphql.swift */,
+				C7D84BC22913B99A009177D7 /* DeleteReplyPayload.graphql.swift */,
+				C7D84BC32913B99A009177D7 /* FavoritePostPayload.graphql.swift */,
+				C7D84BC42913B99A009177D7 /* GetMobileAppUploadTokenPayload.graphql.swift */,
+				C7D84BC52913B99A009177D7 /* UpdateMobileAppInfoPayload.graphql.swift */,
+				C7D84BC62913B99A009177D7 /* UpdatePostPayload.graphql.swift */,
+				C7D84BC72913B99A009177D7 /* User.graphql.swift */,
+				C7D84BC82913B99A009177D7 /* CheckPersonIDPayload.graphql.swift */,
+				C7D84BC92913B99A009177D7 /* DeletePostPayload.graphql.swift */,
+				C7D84BCA2913B99A009177D7 /* ReplyConnection.graphql.swift */,
+				C7D84BCB2913B99A009177D7 /* Reply.graphql.swift */,
+				C7D84BCC2913B99A009177D7 /* ReadMessagePayload.graphql.swift */,
+				C7D84BCD2913B99A009177D7 /* AddPostPayload.graphql.swift */,
+				C7D84BCE2913B99A009177D7 /* Mutation.graphql.swift */,
+				C7D84BCF2913B99A009177D7 /* PageInfo.graphql.swift */,
+				C7D84BD02913B99A009177D7 /* CheckPhonePayload.graphql.swift */,
+				C7D84BD12913B99A009177D7 /* GetUploadTokenPayload.graphql.swift */,
+				C7D84BD22913B99A009177D7 /* Category.graphql.swift */,
+				C7D84BD32913B99A009177D7 /* LoginPayload.graphql.swift */,
+				C7D84BD42913B99A009177D7 /* Query.graphql.swift */,
+				C7D84BD52913B99A009177D7 /* ChangePasswordPayload.graphql.swift */,
+				C7D84BD62913B99A009177D7 /* AddReplyPayload.graphql.swift */,
+				C7D84BD72913B99A009177D7 /* UserCount.graphql.swift */,
+				C7D84BD82913B99A009177D7 /* ReadMessagesPayload.graphql.swift */,
+				C7D84BD92913B99A009177D7 /* LikePostPayload.graphql.swift */,
+				C7D84BDA2913B99A009177D7 /* AddReportPayload.graphql.swift */,
+				C7D84BDB2913B99A009177D7 /* SendCodePayload.graphql.swift */,
+				C7D84BDC2913B99A009177D7 /* AddMobileAppInfoPayload.graphql.swift */,
+				C7D84BDD2913B99A009177D7 /* MessageCount.graphql.swift */,
+				C7D84BDE2913B99A009177D7 /* MobileAppInfo.graphql.swift */,
+				C7D84BDF2913B99A009177D7 /* PostConnection.graphql.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		C7D84BE12913B99A009177D7 /* InputObjects */ = {
+			isa = PBXGroup;
+			children = (
+				C7D84BE22913B99A009177D7 /* FollowUserInput.graphql.swift */,
+				C7D84BE32913B99A009177D7 /* ReadPostInput.graphql.swift */,
+				C7D84BE42913B99A009177D7 /* LoginInput.graphql.swift */,
+				C7D84BE52913B99A009177D7 /* GetUploadTokenInput.graphql.swift */,
+				C7D84BE62913B99A009177D7 /* CheckPersonIDInput.graphql.swift */,
+				C7D84BE72913B99A009177D7 /* AddReportInput.graphql.swift */,
+				C7D84BE82913B99A009177D7 /* RegisterInput.graphql.swift */,
+				C7D84BE92913B99A009177D7 /* AddMobileAppInfoInput.graphql.swift */,
+				C7D84BEA2913B99A009177D7 /* AddReplyInput.graphql.swift */,
+				C7D84BEB2913B99A009177D7 /* CheckUsernameInput.graphql.swift */,
+				C7D84BEC2913B99A009177D7 /* ReadMessagesInput.graphql.swift */,
+				C7D84BED2913B99A009177D7 /* DeleteReplyInput.graphql.swift */,
+				C7D84BEE2913B99A009177D7 /* SendPhoneCodeInput.graphql.swift */,
+				C7D84BEF2913B99A009177D7 /* LikePostInput.graphql.swift */,
+				C7D84BF02913B99A009177D7 /* SendEmailCodeInput.graphql.swift */,
+				C7D84BF12913B99A009177D7 /* ReadMessageInput.graphql.swift */,
+				C7D84BF22913B99A009177D7 /* ChangePasswordInput.graphql.swift */,
+				C7D84BF32913B99A009177D7 /* UpdateMobileAppInfoInput.graphql.swift */,
+				C7D84BF42913B99A009177D7 /* AddPostInput.graphql.swift */,
+				C7D84BF52913B99A009177D7 /* DeletePostInput.graphql.swift */,
+				C7D84BF62913B99A009177D7 /* CheckPhoneInput.graphql.swift */,
+				C7D84BF72913B99A009177D7 /* GetMobileAppUploadTokenInput.graphql.swift */,
+				C7D84BF82913B99A009177D7 /* UpdatePostInput.graphql.swift */,
+				C7D84BF92913B99A009177D7 /* FavoritePostInput.graphql.swift */,
+				C7D84BFA2913B99A009177D7 /* UpdateUserInput.graphql.swift */,
+				C7D84BFB2913B99A009177D7 /* UpdateReplyInput.graphql.swift */,
+				C7D84BFC2913B99A009177D7 /* SetPhoneInput.graphql.swift */,
+			);
+			path = InputObjects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +562,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7D84A3F2913B753009177D7 /* Build configuration list for PBXNativeTarget "MyTest" */;
 			buildPhases = (
+				08A20A5FD6AEC599D7CC9182 /* [CP] Check Pods Manifest.lock */,
 				C7D84A2D2913B751009177D7 /* Sources */,
 				C7D84A2E2913B751009177D7 /* Frameworks */,
 				C7D84A2F2913B751009177D7 /* Resources */,
+				56F667DEDBBC79C452F875BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,20 +615,198 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D84A832913B92D009177D7 /* User.graphql in Resources */,
+				C7D84AA92913B92D009177D7 /* Search.graphql in Resources */,
 				C7D84A3C2913B753009177D7 /* Preview Assets.xcassets in Resources */,
+				C7D84AB62913B92D009177D7 /* GetUserData.graphql in Resources */,
+				C7D84AAB2913B92D009177D7 /* Update.graphql in Resources */,
+				C7D84A902913B92D009177D7 /* Message.graphql in Resources */,
+				C7D84A802913B92D009177D7 /* schema.graphqls in Resources */,
+				C7D84A842913B92D009177D7 /* .graphqlconfig in Resources */,
+				C7D84AB22913B92D009177D7 /* Category.graphql in Resources */,
+				C7D84AAC2913B92D009177D7 /* AddPost.graphql in Resources */,
+				C7D84A9F2913B92D009177D7 /* Image.graphql in Resources */,
+				C7D84AAA2913B92D009177D7 /* Post.graphql in Resources */,
+				C7D84A852913B92D009177D7 /* GetPost.graphql in Resources */,
 				C7D84A392913B753009177D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08A20A5FD6AEC599D7CC9182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56F667DEDBBC79C452F875BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTest/Pods-MyTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyTest/Pods-MyTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTest/Pods-MyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7D84A2D2913B751009177D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7D84C192913B99B009177D7 /* ReadMessagePayload.graphql.swift in Sources */,
+				C7D84C312913B99B009177D7 /* GetUploadTokenInput.graphql.swift in Sources */,
+				C7D84C0A2913B99B009177D7 /* Message.graphql.swift in Sources */,
+				C7D84ABA2913B92D009177D7 /* ChangePasswordMutation.graphql.swift in Sources */,
+				C7D84A8C2913B92D009177D7 /* FavoritePostMutation.graphql.swift in Sources */,
+				C7D84C0E2913B99B009177D7 /* CheckUsernamePayload.graphql.swift in Sources */,
+				C7D84BFE2913B99B009177D7 /* SearchResult.graphql.swift in Sources */,
+				C7D84A862913B92D009177D7 /* UpdateMobileAppMutation.graphql.swift in Sources */,
+				C7D84C412913B99B009177D7 /* DeletePostInput.graphql.swift in Sources */,
+				C7D84C022913B99B009177D7 /* SearchType.graphql.swift in Sources */,
+				C7D84AB92913B92D009177D7 /* CheckPhoneMutation.graphql.swift in Sources */,
+				C7D84ABB2913B92D009177D7 /* RegisterMutation.graphql.swift in Sources */,
+				C7D84A872913B92D009177D7 /* SearchQuery.graphql.swift in Sources */,
+				C7D84A942913B92D009177D7 /* CategoryQuery.graphql.swift in Sources */,
+				C7D84AA52913B92D009177D7 /* FollowUserMutation.graphql.swift in Sources */,
+				C7D84AB82913B92D009177D7 /* SendEmailCodeMutation.graphql.swift in Sources */,
+				C7D84C492913B99B009177D7 /* SchemaMetadata.graphql.swift in Sources */,
+				C7D84AB12913B92D009177D7 /* SetPhoneMutation.graphql.swift in Sources */,
+				C7D84C472913B99B009177D7 /* UpdateReplyInput.graphql.swift in Sources */,
+				C7D84C1B2913B99B009177D7 /* Mutation.graphql.swift in Sources */,
+				C7D84C1F2913B99B009177D7 /* Category.graphql.swift in Sources */,
+				C7D84A8E2913B92D009177D7 /* UpdateQuery.graphql.swift in Sources */,
+				C7D84AB02913B92D009177D7 /* UserLikedPostQuery.graphql.swift in Sources */,
+				C7D84C372913B99B009177D7 /* CheckUsernameInput.graphql.swift in Sources */,
+				C7D84A992913B92D009177D7 /* PostQuery.graphql.swift in Sources */,
+				C7D84C172913B99B009177D7 /* ReplyConnection.graphql.swift in Sources */,
 				C7D84A372913B751009177D7 /* ContentView.swift in Sources */,
+				C7D84C132913B99B009177D7 /* UpdatePostPayload.graphql.swift in Sources */,
+				C7D84C212913B99B009177D7 /* Query.graphql.swift in Sources */,
+				C7D84C2B2913B99B009177D7 /* MobileAppInfo.graphql.swift in Sources */,
+				C7D84C032913B99B009177D7 /* MessageType.graphql.swift in Sources */,
+				C7D84C272913B99B009177D7 /* AddReportPayload.graphql.swift in Sources */,
+				C7D84C402913B99B009177D7 /* AddPostInput.graphql.swift in Sources */,
+				C7D84BFF2913B99B009177D7 /* MessageRefer.graphql.swift in Sources */,
+				C7D84C3B2913B99B009177D7 /* LikePostInput.graphql.swift in Sources */,
+				C7D84C0D2913B99B009177D7 /* FollowUserPayload.graphql.swift in Sources */,
+				C7D84C342913B99B009177D7 /* RegisterInput.graphql.swift in Sources */,
+				C7D84A922913B92D009177D7 /* FollowedQuery.graphql.swift in Sources */,
+				C7D84AA42913B92D009177D7 /* UserMarkedPostQuery.graphql.swift in Sources */,
+				C7D84C182913B99B009177D7 /* Reply.graphql.swift in Sources */,
+				C7D84C112913B99B009177D7 /* GetMobileAppUploadTokenPayload.graphql.swift in Sources */,
+				C7D84C252913B99B009177D7 /* ReadMessagesPayload.graphql.swift in Sources */,
+				C7D84C1A2913B99B009177D7 /* AddPostPayload.graphql.swift in Sources */,
+				C7D84C0C2913B99B009177D7 /* UpdateUserPayload.graphql.swift in Sources */,
+				C7D84A9B2913B92D009177D7 /* CurrentUserQuery.graphql.swift in Sources */,
+				C7D84C162913B99B009177D7 /* DeletePostPayload.graphql.swift in Sources */,
+				C7D84A8B2913B92D009177D7 /* PostsQuery.graphql.swift in Sources */,
+				C7D84C2D2913B99B009177D7 /* SchemaConfiguration.swift in Sources */,
+				C7D84C462913B99B009177D7 /* UpdateUserInput.graphql.swift in Sources */,
+				C7D84C322913B99B009177D7 /* CheckPersonIDInput.graphql.swift in Sources */,
+				C7D84C422913B99B009177D7 /* CheckPhoneInput.graphql.swift in Sources */,
+				C7D84C1C2913B99B009177D7 /* PageInfo.graphql.swift in Sources */,
+				C7D84C442913B99B009177D7 /* UpdatePostInput.graphql.swift in Sources */,
+				C7D84C392913B99B009177D7 /* DeleteReplyInput.graphql.swift in Sources */,
+				C7D84C292913B99B009177D7 /* AddMobileAppInfoPayload.graphql.swift in Sources */,
+				C7D84C0F2913B99B009177D7 /* DeleteReplyPayload.graphql.swift in Sources */,
+				C7D84C282913B99B009177D7 /* SendCodePayload.graphql.swift in Sources */,
+				C7D84A812913B92D009177D7 /* CheckPersonIdMutation.graphql.swift in Sources */,
+				C7D84C302913B99B009177D7 /* LoginInput.graphql.swift in Sources */,
+				C7D84C3C2913B99B009177D7 /* SendEmailCodeInput.graphql.swift in Sources */,
+				C7D84C142913B99B009177D7 /* User.graphql.swift in Sources */,
+				C7D84C262913B99B009177D7 /* LikePostPayload.graphql.swift in Sources */,
+				C7D84C102913B99B009177D7 /* FavoritePostPayload.graphql.swift in Sources */,
+				C7D84C222913B99B009177D7 /* ChangePasswordPayload.graphql.swift in Sources */,
+				C7D84A952913B92D009177D7 /* MessagesQuery.graphql.swift in Sources */,
+				C7D84C072913B99B009177D7 /* RegisterPayload.graphql.swift in Sources */,
+				C7D84C042913B99B009177D7 /* UploadType.graphql.swift in Sources */,
+				C7D84C1E2913B99B009177D7 /* GetUploadTokenPayload.graphql.swift in Sources */,
+				C7D84A9C2913B92D009177D7 /* UserDataQuery.graphql.swift in Sources */,
+				C7D84C362913B99B009177D7 /* AddReplyInput.graphql.swift in Sources */,
+				C7D84A932913B92D009177D7 /* FollowingPostQuery.graphql.swift in Sources */,
+				C7D84C3A2913B99B009177D7 /* SendPhoneCodeInput.graphql.swift in Sources */,
+				C7D84A912913B92D009177D7 /* AppQuery.graphql.swift in Sources */,
 				C7D84A352913B751009177D7 /* MyTestApp.swift in Sources */,
+				C7D84C2E2913B99B009177D7 /* FollowUserInput.graphql.swift in Sources */,
+				C7D84A972913B92D009177D7 /* LoginMutation.graphql.swift in Sources */,
+				C7D84C3D2913B99B009177D7 /* ReadMessageInput.graphql.swift in Sources */,
+				C7D84C152913B99B009177D7 /* CheckPersonIDPayload.graphql.swift in Sources */,
+				C7D84A9D2913B92D009177D7 /* ReplyQuery.graphql.swift in Sources */,
+				C7D84C352913B99B009177D7 /* AddMobileAppInfoInput.graphql.swift in Sources */,
+				C7D84AAD2913B92D009177D7 /* AddReplyMutation.graphql.swift in Sources */,
+				C7D84A892913B92D009177D7 /* AddPostMutation.graphql.swift in Sources */,
+				C7D84A822913B92D009177D7 /* GetUploadTokenMutation.graphql.swift in Sources */,
+				C7D84AAE2913B92D009177D7 /* ReadMessagesMutation.graphql.swift in Sources */,
+				C7D84A882913B92D009177D7 /* UserPostQuery.graphql.swift in Sources */,
+				C7D84AB52913B92D009177D7 /* UpdateReplyMutation.graphql.swift in Sources */,
+				C7D84AA22913B92D009177D7 /* DeletePostMutation.graphql.swift in Sources */,
+				C7D84AA32913B92D009177D7 /* UpdateUserMutation.graphql.swift in Sources */,
+				C7D84A9E2913B92D009177D7 /* AddReportMutation.graphql.swift in Sources */,
+				C7D84C332913B99B009177D7 /* AddReportInput.graphql.swift in Sources */,
+				C7D84AA62913B92D009177D7 /* CategoryPostQuery.graphql.swift in Sources */,
+				C7D84AA02913B92D009177D7 /* ReadMessageMutation.graphql.swift in Sources */,
+				C7D84AA72913B92D009177D7 /* UnreadMessageCountQuery.graphql.swift in Sources */,
+				C7D84C062913B99B009177D7 /* UpdateReplyPayload.graphql.swift in Sources */,
+				C7D84A8F2913B92D009177D7 /* SendPhoneCodeMutation.graphql.swift in Sources */,
+				C7D84C2A2913B99B009177D7 /* MessageCount.graphql.swift in Sources */,
+				C7D84AB72913B92D009177D7 /* HotPostsQuery.graphql.swift in Sources */,
+				C7D84C2F2913B99B009177D7 /* ReadPostInput.graphql.swift in Sources */,
+				C7D84C482913B99B009177D7 /* SetPhoneInput.graphql.swift in Sources */,
+				C7D84C122913B99B009177D7 /* UpdateMobileAppInfoPayload.graphql.swift in Sources */,
+				C7D84C0B2913B99B009177D7 /* Post.graphql.swift in Sources */,
+				C7D84A9A2913B92D009177D7 /* FollowingQuery.graphql.swift in Sources */,
+				C7D84C052913B99B009177D7 /* Account.graphql.swift in Sources */,
+				C7D84A962913B92D009177D7 /* ReadPostMutation.graphql.swift in Sources */,
+				C7D84C202913B99B009177D7 /* LoginPayload.graphql.swift in Sources */,
+				C7D84C242913B99B009177D7 /* UserCount.graphql.swift in Sources */,
+				C7D84AAF2913B92D009177D7 /* AddCommentMutation.graphql.swift in Sources */,
+				C7D84C3E2913B99B009177D7 /* ChangePasswordInput.graphql.swift in Sources */,
+				C7D84AB42913B92D009177D7 /* AddMobileAppMutation.graphql.swift in Sources */,
+				C7D84A982913B92D009177D7 /* GetAppUploadTokenMutation.graphql.swift in Sources */,
+				C7D84C432913B99B009177D7 /* GetMobileAppUploadTokenInput.graphql.swift in Sources */,
+				C7D84A8A2913B92D009177D7 /* CheckUsernameMutation.graphql.swift in Sources */,
+				C7D84AA82913B92D009177D7 /* UpdatePostMutation.graphql.swift in Sources */,
+				C7D84C452913B99B009177D7 /* FavoritePostInput.graphql.swift in Sources */,
+				C7D84A8D2913B92D009177D7 /* DeleteReplyMutation.graphql.swift in Sources */,
+				C7D84C002913B99B009177D7 /* DateTime.swift in Sources */,
+				C7D84C092913B99B009177D7 /* ReadPostPayload.graphql.swift in Sources */,
+				C7D84C382913B99B009177D7 /* ReadMessagesInput.graphql.swift in Sources */,
+				C7D84C2C2913B99B009177D7 /* PostConnection.graphql.swift in Sources */,
+				C7D84C1D2913B99B009177D7 /* CheckPhonePayload.graphql.swift in Sources */,
+				C7D84AA12913B92D009177D7 /* UserRepliesPostQuery.graphql.swift in Sources */,
+				C7D84C232913B99B009177D7 /* AddReplyPayload.graphql.swift in Sources */,
+				C7D84C082913B99B009177D7 /* SetPhonePayload.graphql.swift in Sources */,
+				C7D84C012913B99B009177D7 /* ReportType.graphql.swift in Sources */,
+				C7D84C3F2913B99B009177D7 /* UpdateMobileAppInfoInput.graphql.swift in Sources */,
+				C7D84AB32913B92D009177D7 /* LikePostMutation.graphql.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +929,7 @@
 		};
 		C7D84A402913B753009177D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CF5FB323A29BA079D044AED /* Pods-MyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +958,7 @@
 		};
 		C7D84A412913B753009177D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A04DC80F1CF553D6BD4791 /* Pods-MyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
